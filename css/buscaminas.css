@@ -1,0 +1,15 @@
+h1 {
+   background-color:blueviolet; 
+}
+
+
+main {
+    background-color: gray; 
+    border-color: black;
+    display: flex; 
+}
+
+.grillaCompleta {
+    border: rgb(red, green, blue);
+}
+ 
