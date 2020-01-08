@@ -21,16 +21,6 @@ Tablero.prototype.GenerarGrilla = function() {
         }
     }
     this.casilleros = array;
-<<<<<<< HEAD
-}
-
-/*Tablero.prototype.GenerarMinas = function(){//FALTA TERMINARLA
-    Tablero.forEach(function(casilleros){
-        [0][0] = (true, 0, false);
-    }
-        
-    });*/
-=======
     this.GenerarMinas();
 }
 
@@ -52,24 +42,4 @@ Tablero.prototype.GenerarMinas = function(){ //FALTA TERMINARLA
         }
     }
     console.log(this.casilleros);
->>>>>>> class23
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> class23
