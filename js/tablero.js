@@ -21,11 +21,41 @@ Tablero.prototype.GenerarGrilla = function() {
         }
     }
     this.casilleros = array;
+    this.GenerarMinas();
 }
 
-/*Tablero.prototype.GenerarMinas = function(){//FALTA TERMINARLA
-    Tablero.forEach(function(casilleros){
-        [0][0] = (true, 0, false);
+Tablero.prototype.GenerarMinas = function(){ //FALTA TERMINARLA
+    // como convertir una casilla en una mina manualmente this.casilleros[0][0].mina = true;
+
+   /*Opcion hecha con el for para entender for (var i = 0; i < 10; i++){
+        var randomFila = Math.floor(Math.random() * 10);
+        var randomColumna = Math.floor(Math.random() * 10);
+        this.casilleros[randomFila][randomColumna].mina = true;*/
+    var minas = 10;
+
+    while ( minas > 0){
+        var randomFila = Math.floor(Math.random() * 10);
+        var randomColumna = Math.floor(Math.random() * 10);
+        if (this.casilleros[randomFila][randomColumna].mina == false) {
+        this.casilleros[randomFila][randomColumna].mina = true;
+        minas -= 1;
+        }
     }
-        
-    });*/
+    console.log(this.casilleros);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
