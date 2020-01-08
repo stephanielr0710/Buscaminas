@@ -1,3 +1,20 @@
 h1 {
+<<<<<<< HEAD
    background-color: red; 
 }
+=======
+   background-color:blueviolet; 
+}
+
+
+main {
+    background-color: gray; 
+    border-color: black;
+    display: flex; 
+}
+
+.grillaCompleta {
+    border: rgb(red, green, blue);
+}
+ 
+>>>>>>> class23
