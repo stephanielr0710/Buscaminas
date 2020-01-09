@@ -1,8 +1,4 @@
 h1 {
-<<<<<<< HEAD
-   background-color: red; 
-}
-=======
    background-color:blueviolet; 
 }
 
@@ -17,4 +13,18 @@ main {
     border: rgb(red, green, blue);
 }
  
->>>>>>> class23
+#Tablero{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#Tablero .grillaCompleta{
+    display: block;
+    max-width: 10%;
+    box-shadow: 1px 1px 1px 1px #fff;
+    text-align: center;
+    height: 63px;
+    margin: auto;
+    width: 100vw;
+}

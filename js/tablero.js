@@ -20,7 +20,7 @@ Tablero.prototype.GenerarGrilla = function() {
             array[i][j] = new Casilla(false, 0, true);
         }
     }
-    this.casilleros = array;
+    this.casilleros = array; 
     this.GenerarMinas();
 }
 
