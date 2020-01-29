@@ -2,25 +2,15 @@ var Tablero = function () {
     this.casilleros = [];
 }
 
-
-var mostrarArray = function (array) {
-    for (var i = 0; i < array.length; i++) {
-        for (var j = 0; j < array[i].length; j++) {
-            console.log(array[i][j]);
-        }
-    }
-
-}
-
 Tablero.prototype.GenerarGrilla = function() {
-    var array = [];
+
     for (var i = 0; i < 10; i++) {
-        array[i] = [];
+        this.casilleros[i] = [];
         for (var j = 0; j < 10; j++) {
-            array[i][j] = new Casilla(false, 0, true);
+            this.casilleros[i][j] = new Casilla(false, 0, false);
         }
     }
-    this.casilleros = array; 
+    
     this.GenerarMinas();
     this.GenerarNumeros();
 }
@@ -43,7 +33,6 @@ Tablero.prototype.GenerarMinas = function(){
     
         }
     }
-    console.log(this.casilleros);
     
 }
 

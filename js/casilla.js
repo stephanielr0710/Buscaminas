@@ -1,6 +1,6 @@
 
-var Casilla = function (mina, numero, vacio) {
+var Casilla = function (mina, numero, mostrado) {
     this.mina = mina;
     this.numero = numero;
-    this.vacio = vacio;
+    this.mostrado = mostrado;
 }
