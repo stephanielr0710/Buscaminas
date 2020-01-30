@@ -21,16 +21,24 @@ class Vista {
                     let casillaClickeada = contextoVista.controlador.tablero.casilleros[i][j];
 
                     if (casillaClickeada.mina == true){
-                        casillero.style.backgroundColor = "#000000";
+                        casillero.style.backgroundImage = "url(../imagenes/ImagenBombaExplotada.jpg)";
+                        casillero.style.backgroundSize = 'cover';
+                        casillero.style.backgroundRepeat = 'no-repeat';
+                        
                         for (let l = 0; l < 10; l++) {
                             for (let v = 0; v < 10; v++) {
                                 let hayBomba = contextoVista.controlador.tablero.casilleros[l][v].mina;
                                 if (hayBomba == true){
-                                    document.querySelector('[fil="' + l + '"][col="' + v + '"]').style.backgroundColor = "#000000";// armamos un texto con variables
+                                   // document.querySelector('[fil="' + l + '"][col="' + v + '"]').style.backgroundColor = "#000000";// armamos un texto con variables
+                                    let otraBomba = document.querySelector('[fil="' + l + '"][col="' + v + '"]');
+                                    otraBomba.style.backgroundImage = "url(../imagenes/ImagenBombaExplotada.jpg)";
+                                    otraBomba.style.backgroundSize = 'cover';
+                                    otraBomba.style.backgroundRepeat = 'no-repeat';
+                                    
                                 }
                             }
-                        }
-        
+                        } 
+                      //  setTimeout(alert('GAME OVER!!!!!'), 12000);
                     }else{
                         casillero.style.backgroundColor = "#BBBBBB";
                         casillero.innerHTML = casillaClickeada.numero;
