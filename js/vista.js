@@ -44,6 +44,8 @@ class Vista {
                     }else{
                         casillero.style.backgroundColor = "#BBBBBB";
                         casillero.innerHTML = casillaClickeada.numero;
+                        casillaClickeada.mostrado = true;
+                        
                     }
                     
 
