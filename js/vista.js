@@ -31,14 +31,16 @@ class Vista {
                                 if (hayBomba == true){
                                    // document.querySelector('[fil="' + l + '"][col="' + v + '"]').style.backgroundColor = "#000000";// armamos un texto con variables
                                     let otraBomba = document.querySelector('[fil="' + l + '"][col="' + v + '"]');
-                                    otraBomba.style.backgroundImage = "url(../imagenes/ImagenBombaExplotada.jpg)";
+                                   // otraBomba.style.backgroundImage = "url(../imagenes/ImagenBombaExplotada.jpg)";
+                                    otraBomba.style.backgroundImage = "url(../imagenes/boom2.jpeg)";
                                     otraBomba.style.backgroundSize = 'cover';
                                     otraBomba.style.backgroundRepeat = 'no-repeat';
+                                    
                                     
                                 }
                             }
                         } 
-                      //  setTimeout(alert('GAME OVER!!!!!'), 12000);
+                       setTimeout(()=>alert('GAME OVER!!!!!'), 200);
                     }else{
                         casillero.style.backgroundColor = "#BBBBBB";
                         casillero.innerHTML = casillaClickeada.numero;

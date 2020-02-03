@@ -1,5 +1,11 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+    color: blue;
+}
 
-
+h1{
+    text-align: center;
+}
 .grillaCompleta {
     user-select: none;
     color: rgba(255, 255, 255);
@@ -20,4 +26,7 @@
     height: 63px;
     margin: auto;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
